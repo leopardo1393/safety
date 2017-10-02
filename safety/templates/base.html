@@ -7,13 +7,14 @@
 -->
 <html>
 	<head>
-		<title>SAFETY CONSULTING S.A.S{% block titulo %}
+		<title>CENTRO DE CAPACITACIÓN INDUSTRIAL SAFETY CONSULTING{% block titulo %}
 
 {% endblock %}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet"  type="text/css" href="{% static 'assets/css/main.css' %}"/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="shortcut icon" href="{%static 'favicon.ico' %}">
@@ -42,7 +43,7 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1><img src="{% static 'images/logo.png' %}" alt="" data-position="center center" />SAFETY CONSULTING S.A.S</h1>
+							<h1><img src="{% static 'images/logo.png' %}" alt="" data-position="center center" />CENTRO DE CAPACITACIÓN INDUSTRIAL SAFETY CONSULTING</h1>
 							<p>Consulte sus cursos aquí.</p>
 								    <form  method="POST" 	action="/safety/certificados/">
 									{% csrf_token %}
@@ -148,7 +149,81 @@
 
 										</table>
 
-						</div>
+									</div>
+									<h3>CERTIFICACION DE OPERARIOS PARA MAQUINARIA PESADA</h3>
+									
+									<ol><h4>METODOLOGÍA</h4></ol>
+									<center>
+									<p align="justify" style="width: 80%"><b>Parte Teórica:</b> Desarrollada especialmente en el tema de Seguridad Industrial y Personal, para lo cual los instructores utilizan programas multimedia, proyector, videos, entre otros.<br />
+<b>Parte Teórica – Práctica:</b>  Desarrollada en el tema de mantenimiento y operación, donde se brinda una ilustración comparativa entre las piezas y componentes de la maquinaria pesada, con explicaciones directamente en campo y en la máquina.<br />
+<b>Parte Práctica:</b>  Realizada en el Centro de Entrenamiento, los instructores y estudiantes realizan la Operación de la Maquinaria Pesada, en los espacios habilitados especialmente para el curso.<br /></p>
+							
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="{%static 'images/retroexcavadora.jpg' %}" style="width:100%;height:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Operario de retroexcavadora
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="{%static 'images/vibrocompactador.jpg' %}" style="width:100%;height:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Operario de vibrocompactador
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="{%static 'images/grua.jpg' %}" style="width:100%;height:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Operario de grua
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="{%static 'images/izaje.jpg' %}" style="width:100;height:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Operario de gancho de izaje
+  </div>
+
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="{%static 'images/minicargador.jpg' %}" style="width:100;height:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Operario de minicargador
+  </div>
+  
+</div>
+
+								
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+</div></center>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<center><p align="justify" style="width: 80%">El curso de "OPERADOR DE MAQUINARIA PESADA 2017 tiene como objetivo desarrollar en el participante destreza en la operación de Excavadora Hidráulica de cualquier marca y modelo, que permita un logro de resultados calificados. La especial dedicación y cantidad de horas y metodologías de prácticas con los equipos, harán alcanzar un buen nivel de maniobra y operatividad con la Maquinaria Pesada, familiarizando al aprendiz con todas las funciones del equipo.</p></center>
+						</div>						
 						</section>
 					</section>
 

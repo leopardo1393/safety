@@ -17,7 +17,7 @@ class certificaciones(models.Model):
 	cedula = models.CharField(max_length=30, db_tablespace= "CEDULA")
 	nombres = models.CharField(max_length=70, db_tablespace= "NOMBRES")
 	apellido = models.CharField(max_length=70, db_tablespace= "APELLIDOS")
-	codigo = models.CharField(max_length=20, db_tablespace= "CODIGO")
+	codigo = models.CharField(max_length=100, db_tablespace= "CODIGO")
 	aprobo = models.CharField(max_length=70, db_tablespace= "APROBO")
 	fecha = models.DateTimeField(db_tablespace= "fecha")
 	horas = models.CharField(max_length=3, db_tablespace= "HORAS")
